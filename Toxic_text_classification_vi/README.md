@@ -1,3 +1,3 @@
 # Fine-tune Encoder-Only model
 
-`phobert`
+Fine-tune mô hình: `phobert-large`
