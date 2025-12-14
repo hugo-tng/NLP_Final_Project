@@ -1,3 +1,3 @@
 # Fine-tune Encoder-Decoder model
 
-`T5/ViT5`
+Fine-tune mô hình: `T5/ViT5`
