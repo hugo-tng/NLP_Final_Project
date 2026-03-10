@@ -50,8 +50,9 @@ Input Tokens → Embedding Layer → Transformer Blocks
 
 ### Dataset Gốc
 
+- **File chính:** `Datasets/Dataset03.csv` – đây là bản sao dữ liệu gốc đã tải xuống và/hoặc tiền xử lý cơ bản. Nó chứa các cuộc hội thoại thực tế về sản phẩm.
 - **Nguồn:** [Sendo Vietnamese Multiturn Dataset](https://huggingface.co/datasets/5CD-AI/sendo_vietnamese_multiturn_gemini_50k)
-- **Kích thước:** ~50,000 cuộc hội thoại
+- **Kích thước:** ~50,000 cuộc hội thoại (tương ứng với Dataset03.csv)
 - **Nội dung:** Câu hỏi-câu trả lời thực tế về sản phẩm từ nền tảng Sendo
 - **Định dạng:** Multiturn conversations (history + current question + answer)
 
@@ -91,13 +92,13 @@ Input Tokens → Embedding Layer → Transformer Blocks
 
 ```
 Chatbot_ProductQA/
-├── README.md                              # Tệp này
-├── Datasets/
-│   ├── Dataset03.csv                      # Dataset gốc
-│   └── synthetic_final.csv                # Dữ liệu tổng hợp
-└── Source/
-    ├── Decoder_Only_Finetune.ipynb        # Main fine-tuning notebook
-    └── Synthetic_Data_DO.ipynb            # Synthetic data generation
+├── README.md                              # Tệp tài liệu này
+├── Datasets/                              # chứa các bảng dữ liệu dạng CSV
+│   ├── Dataset03.csv                      # Bản sao dataset gốc (Sendo multiturn Q&A)
+│   └── synthetic_final.csv                # Dữ liệu tổng hợp sau khi chạy notebook tạo data
+└── Source/                                # notebook và mã nguồn liên quan
+    ├── Decoder_Only_Finetune.ipynb        # Notebook chính cho fine‑tuning trên dữ liệu ở trên
+    └── Synthetic_Data_DO.ipynb            # Notebook tạo/sinh bổ sung synthetic dataset
 ```
 
 ---
